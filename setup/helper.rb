@@ -3,7 +3,7 @@ def create_folder(folder_path)
 end
 
 def copy_code(source, target)
-  `cp -r #{source} #{target}`
+  `cp -r #{source}/* #{target}`
 end
 
 def copy_routes(target, site)
