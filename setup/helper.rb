@@ -14,6 +14,6 @@ def copy_timezone(target, site)
   `cp #{target}/config/site_specific_timezones/#{site}_timezone.rb #{target}/config/site_specific_timezone.rb`
 end
 
-def copy_database_conf(target, site)
+def setup_database_conf(target, site)
   `echo 'database: btt_#{site}' > #{target}/config/production_db.yml`
 end

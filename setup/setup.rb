@@ -13,11 +13,11 @@ sites.each do |site|
 
   create_folder target
 
-  copy_code source target
+  copy_code source, target
 
   copy_routes target, site
   copy_timezone target, site
-  setup_database_conf
+  setup_database_conf target, site
 end
 
 #-------------------------------------------------------------------------------------
